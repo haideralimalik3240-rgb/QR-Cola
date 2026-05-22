@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Flavors | QR Cola</title>
+    <meta name="description" content="Explore the explosive flavors of QR Cola. From the crisp Original to electric Berry Blast and Zero Sugar. Scan the Taste.">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Special class for flavor page to handle scroll snapping -->
+<body class="dark-mode page-flavors">
+
+    <!-- Mini Cart Drawer (Consistent with Shop Page) -->
+    <div id="cart-overlay" class="cart-overlay hidden"></div>
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h3>YOUR CART</h3>
+            <button class="close-cart" aria-label="Close Cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Dynamically populated via JS -->
+            <div class="cart-item">
+                <div class="cart-item-img placeholder-original"></div>
+                <div class="cart-item-info">
+                    <h4>QR Cola Original</h4>
+                    <p>12-Pack</p>
+                    <div class="qty-control">
+                        <button class="qty-btn">-</button>
+                        <span>1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                </div>
+                <div class="cart-item-price">$12.99</div>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <span>$12.99</span>
+            </div>
+            <a href="checkout.html" class="btn btn-primary btn-full">SECURE CHECKOUT 🔒</a>
+        </div>
+    </div>
+
+    <!-- Sticky Header -->
+    <header id="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">QR COLA</a>
+            <nav class="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="flavors.html" class="active">Flavors</a>
+                <a href="rewards.html">Rewards</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button id="cart-icon" class="btn btn-ghost btn-small cart-icon-btn">CART (1)</button>
+                <button class="hamburger" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <nav class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="flavors.html" class="active">Flavors</a>
+            <a href="rewards.html">Rewards</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Side Navigation Dots for Snap Scrolling -->
+    <div class="scroll-dots">
+        <a href="#flavor-original" class="dot active" aria-label="Go to Original"></a>
+        <a href="#flavor-zero" class="dot" aria-label="Go to Zero Sugar"></a>
+        <a href="#flavor-berry" class="dot" aria-label="Go to Berry Blast"></a>
+        <a href="#flavor-footer" class="dot" aria-label="Go to Footer"></a>
+    </div>
+
+    <!-- Main Explorer Wrapper -->
+    <main class="flavor-explorer">
+
+        <!-- Flavor 1: Original -->
+        <section class="flavor-section" id="flavor-original">
+            <div class="giant-bg-text">ORIGINAL</div>
+            <div class="container flavor-grid">
+                <div class="flavor-text snap-fade">
+                    <div class="flavor-badge">THE CLASSIC</div>
+                    <h2>QR ORIGINAL</h2>
+                    <p class="taste-notes">Bold. Crisp. Unapologetic.</p>
+                    <p class="flavor-desc">The formula that started it all. Engineered for maximum carbonation and an ice-cold bite that stays colder longer.</p>
+                    <div class="ingredients-list">
+                        <h4>THE GOOD STUFF:</h4>
+                        <ul>
+                            <li>✓ Triple-Filtered Carbonated Water</li>
+                            <li>✓ Pure Cane Sugar</li>
+                            <li>✓ QR Secret Spice Blend</li>
+                        </ul>
+                    </div>
+                    <div class="hero-ctas">
+                        <button class="btn btn-primary add-to-cart pulse-hover">ADD TO CART - $12.99</button>
+                        <a href="shop.html" class="btn btn-ghost">VIEW DETAILS</a>
+                    </div>
+                </div>
+                <div class="flavor-visual snap-fade delay-1">
+                    <div class="can-mockup floating can-original">
+                        <div class="can-label">QR<br>COLA</div>
+                        <div class="condensation"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator flavor-scroll">
+                <span>NEXT RUSH</span>
+                <div class="arrow-down"></div>
+            </div>
+        </section>
+
+        <!-- Flavor 2: Zero Sugar -->
+        <section class="flavor-section" id="flavor-zero">
+            <div class="giant-bg-text">ZERO SUGAR</div>
+            <div class="container flavor-grid reverse-layout">
+                <div class="flavor-text snap-fade">
+                    <div class="flavor-badge badge-blue">GUILT FREE</div>
+                    <h2>QR ZERO SUGAR</h2>
+                    <p class="taste-notes">All the rush. Zero compromise.</p>
+                    <p class="flavor-desc">We cracked the code. The exact same heavy-hitting carbonation and bold bite of the original, without a single gram of sugar.</p>
+                    <div class="ingredients-list">
+                        <h4>THE GOOD STUFF:</h4>
+                        <ul>
+                            <li>✓ Max Carbonation Formula</li>
+                            <li>✓ Zero Calories. Zero Sugar.</li>
+                            <li>✓ Clean Plant-Based Sweeteners</li>
+                        </ul>
+                    </div>
+                    <div class="hero-ctas">
+                        <button class="btn btn-primary add-to-cart pulse-hover">ADD TO CART - $12.99</button>
+                        <a href="shop.html" class="btn btn-ghost">VIEW DETAILS</a>
+                    </div>
+                </div>
+                <div class="flavor-visual snap-fade delay-1">
+                    <div class="can-mockup floating can-zero">
+                        <div class="can-label" style="color: #000;">QR<br>ZERO</div>
+                        <div class="condensation"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flavor 3: Berry Blast -->
+        <section class="flavor-section" id="flavor-berry">
+            <div class="giant-bg-text">BERRY BLAST</div>
+            <div class="container flavor-grid">
+                <div class="flavor-text snap-fade">
+                    <div class="flavor-badge badge-purple">SELLING FAST ⚡</div>
+                    <h2>BERRY BLAST</h2>
+                    <p class="taste-notes">Electric fruit fusion.</p>
+                    <p class="flavor-desc">A high-voltage mix of dark berries and the classic QR bite. Sweet, tart, and aggressively carbonated.</p>
+                    <div class="ingredients-list">
+                        <h4>THE GOOD STUFF:</h4>
+                        <ul>
+                            <li>✓ Real Wild Berry Extracts</li>
+                            <li>✓ Pure Cane Sugar</li>
+                            <li>✓ Extra Caffeine Boost</li>
+                        </ul>
+                    </div>
+                    <div class="hero-ctas">
+                        <button class="btn btn-primary add-to-cart pulse-hover">ADD TO CART - $12.99</button>
+                        <a href="shop.html" class="btn btn-ghost">VIEW DETAILS</a>
+                    </div>
+                </div>
+                <div class="flavor-visual snap-fade delay-1">
+                    <div class="can-mockup floating can-berry">
+                        <div class="can-label">QR<br>BERRY</div>
+                        <div class="condensation"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer appended to the scroll explorer -->
+        <footer class="site-footer snap-footer" id="flavor-footer">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">QR COLA</a>
+                    <p>The Cold Drink That Hits Different.</p>
+                    <div class="socials">
+                        <a href="#">IG</a>
+                        <a href="#">TT</a>
+                        <a href="#">X</a>
+                        <a href="#">YT</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Shop</h4>
+                    <a href="shop.html">All Products</a>
+                    <a href="shop.html">Merch</a>
+                    <a href="locations.html">Store Locator</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="about.html">Our Story</a>
+                    <a href="rewards.html">Rewards Program</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 QR Cola. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="footer-tagline">
+                <span>SCAN THE TASTE. FEEL THE RUSH. ™</span>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+</body>
+</html>
