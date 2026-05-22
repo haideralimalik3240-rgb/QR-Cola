@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Cola | Scan the Taste. Feel the Rush.</title>
+    <meta name="description" content="QR Cola — The Cold Drink That Hits Different. Engineered for maximum carbonation and ice-cold refreshment. Scan the can for exclusive rewards.">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "QR Cola",
+      "url": "https://www.qrcola.com",
+      "logo": "https://www.qrcola.com/logo.png",
+      "sameAs": [
+        "https://instagram.com/qrcola",
+        "https://tiktok.com/@qrcola"
+      ]
+    }
+    </script>
+</head>
+<body class="dark-mode">
+    
+    <!-- Exit Intent Popup -->
+    <div id="exit-popup" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close">&times;</button>
+            <h2 class="modal-title">WAIT! GET 10% OFF YOUR FIRST ORDER.</h2>
+            <p>Don't leave empty-handed. Drop your email below to claim your discount instantly.</p>
+            <form class="popup-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">CLAIM DISCOUNT</button>
+            </form>
+            <p class="micro-copy">Secure checkout. Money-back guarantee.</p>
+        </div>
+    </div>
+
+    <!-- Sticky Header -->
+    <header id="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">QR COLA</a>
+            <nav class="desktop-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="flavors.html">Flavors</a>
+                <a href="rewards.html">Rewards</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <a href="shop.html" class="btn btn-primary btn-small">SHOP NOW</a>
+                <button class="hamburger" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <nav class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="flavors.html">Flavors</a>
+            <a href="rewards.html">Rewards</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section 1: HERO -->
+        <section class="hero" id="hero">
+            <div class="qr-watermark"></div>
+            <div class="bubbles-container" id="bubbles"></div>
+            
+            <div class="container hero-content">
+                <div class="hero-text fade-up">
+                    <h1>SCAN THE TASTE.<br>FEEL THE RUSH.</h1>
+                    <p class="sub-headline">QR Cola — The Cold Drink That Hits Different.</p>
+                    <div class="hero-ctas">
+                        <a href="shop.html" class="btn btn-primary pulse-hover">SHOP NOW</a>
+                        <a href="locations.html" class="btn btn-ghost">FIND A STORE</a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-up">
+                    <!-- CSS Placeholder for 3D Can -->
+                    <div class="can-mockup floating">
+                        <div class="can-label">QR<br>COLA</div>
+                        <div class="condensation"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <div class="arrow-down"></div>
+            </div>
+        </section>
+
+        <!-- Section 2: THE FEELING (Social Proof Marquee) -->
+        <section class="marquee-section">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span>500K+ CANS SOLD</span> <span>•</span>
+                    <span>RATED #1 REFRESHMENT</span> <span>•</span>
+                    <span>ZERO COMPROMISE</span> <span>•</span>
+                    <span>ICE COLD EVERY TIME</span> <span>•</span>
+                    <span>QR COLA ™</span> <span>•</span>
+                    <!-- Duplicate for infinite scroll -->
+                    <span>500K+ CANS SOLD</span> <span>•</span>
+                    <span>RATED #1 REFRESHMENT</span> <span>•</span>
+                    <span>ZERO COMPROMISE</span> <span>•</span>
+                    <span>ICE COLD EVERY TIME</span> <span>•</span>
+                    <span>QR COLA ™</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: PRODUCT SHOWCASE -->
+        <section class="products container section-padding" id="shop">
+            <div class="section-header center fade-up">
+                <h2>CHOOSE YOUR RUSH</h2>
+                <p>Engineered for maximum refreshment.</p>
+            </div>
+            <div class="grid-3">
+                <!-- Product 1 -->
+                <div class="product-card fade-up">
+                    <div class="product-img placeholder-original">QR ORIGINAL</div>
+                    <div class="product-info">
+                        <h3>QR Cola Original</h3>
+                        <p>Bold. Crisp. Classic.</p>
+                        <a href="shop.html" class="btn btn-primary btn-full">TRY IT</a>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card fade-up" style="transition-delay: 100ms;">
+                    <div class="product-img placeholder-zero">QR ZERO</div>
+                    <div class="product-info">
+                        <h3>QR Cola Zero Sugar</h3>
+                        <p>All the rush. Zero compromise.</p>
+                        <a href="shop.html" class="btn btn-primary btn-full">TRY IT</a>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card fade-up" style="transition-delay: 200ms;">
+                    <div class="product-img placeholder-berry">BERRY BLAST</div>
+                    <div class="product-info">
+                        <h3>QR Cola Berry Blast</h3>
+                        <p>Electric fruit fusion.</p>
+                        <a href="shop.html" class="btn btn-primary btn-full">TRY IT</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: WHY QR COLA? -->
+        <section class="usp-section section-padding">
+            <div class="container grid-4">
+                <div class="usp-block fade-up">
+                    <div class="icon">🧊</div>
+                    <h4>Ice Cold Formula</h4>
+                    <p>Engineered to stay colder longer.</p>
+                </div>
+                <div class="usp-block fade-up" style="transition-delay: 100ms;">
+                    <div class="icon">⚡</div>
+                    <h4>Max Carbonation</h4>
+                    <p>Every sip hits with full fizz force.</p>
+                </div>
+                <div class="usp-block fade-up" style="transition-delay: 200ms;">
+                    <div class="icon">🌿</div>
+                    <h4>Clean Ingredients</h4>
+                    <p>No junk. Real taste.</p>
+                </div>
+                <div class="usp-block fade-up" style="transition-delay: 300ms;">
+                    <div class="icon">🔴</div>
+                    <h4>QR Rewards</h4>
+                    <p>Scan every can, earn real rewards.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: QR REWARDS PROGRAM -->
+        <section class="rewards-section">
+            <div class="container rewards-split section-padding">
+                <div class="rewards-visual fade-up">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="qr-scan-ui"></div>
+                            <span>+50 POINTS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rewards-text fade-up">
+                    <h2>EVERY CAN IS A KEY.</h2>
+                    <p>Scan the QR code on every QR Cola can to unlock points, prizes, and exclusive drops.</p>
+                    <ol class="steps">
+                        <li><strong>1. BUY</strong> your favorite flavor.</li>
+                        <li><strong>2. SCAN</strong> the unique code on the can.</li>
+                        <li><strong>3. WIN</strong> exclusive merch and free cases.</li>
+                    </ol>
+                    <a href="rewards.html" class="btn btn-black pulse-hover">JOIN THE REWARDS PROGRAM</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: TESTIMONIALS -->
+        <section class="testimonials section-padding container">
+            <div class="section-header center fade-up">
+                <h2>THE VERDICT</h2>
+                <p>Don't just take our word for it.</p>
+            </div>
+            <div class="grid-3">
+                <div class="quote-card fade-up">
+                    <div class="stars">★★★★★</div>
+                    <p>"QR Cola is the only drink I reach for after the gym. The carbonation hits different."</p>
+                    <div class="author">— Marcus T.</div>
+                </div>
+                <div class="quote-card fade-up" style="transition-delay: 100ms;">
+                    <div class="stars">★★★★★</div>
+                    <p>"The Berry Blast flavor is absolutely unreal. Plus, scanning the can is actually fun."</p>
+                    <div class="author">— Sarah L.</div>
+                </div>
+                <div class="quote-card fade-up" style="transition-delay: 200ms;">
+                    <div class="stars">★★★★★</div>
+                    <p>"I love the rewards — already won free merch twice. Zero Sugar is my daily go-to."</p>
+                    <div class="author">— David K.</div>
+                </div>
+            </div>
+            <div class="trust-badges fade-up">
+                <span>✓ 100% Recyclable Cans</span>
+                <span>✓ Non-GMO Ingredients</span>
+                <span>✓ Made Fresh Daily</span>
+            </div>
+        </section>
+
+        <!-- Section 7: LIMITED DROP BANNER -->
+        <section class="limited-drop">
+            <div class="container center fade-up">
+                <h2 class="drop-headline">LIMITED SUMMER DROP — ENDS SOON.</h2>
+                <p>Grab the exclusive QR Cola Summer Pack before it's gone.</p>
+                
+                <div class="countdown" id="countdown">
+                    <div class="time-box"><span id="days">00</span><small>DAYS</small></div>
+                    <div class="time-box"><span id="hours">00</span><small>HOURS</small></div>
+                    <div class="time-box"><span id="mins">00</span><small>MINS</small></div>
+                    <div class="time-box"><span id="secs">00</span><small>SECS</small></div>
+                </div>
+                <p class="scarcity-text">⚠️ Only <span class="dynamic-stock">47</span> Summer Packs left in stock!</p>
+                <a href="shop.html" class="btn btn-black">GET THE DROP</a>
+            </div>
+        </section>
+
+        <!-- Section 8: NEWSLETTER -->
+        <section class="newsletter section-padding">
+            <div class="container center fade-up">
+                <h2>GET FIRST ACCESS. ALWAYS.</h2>
+                <p>Drop your email. Join 500,000+ QR Cola fans getting exclusive deals and reward bonuses before anyone else.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+                </form>
+                <p class="micro-copy">No spam. Unsubscribe anytime. Ever.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Section 9: FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">QR COLA</a>
+                <p>The Cold Drink That Hits Different.</p>
+                <div class="socials">
+                    <a href="#">IG</a>
+                    <a href="#">TT</a>
+                    <a href="#">X</a>
+                    <a href="#">YT</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Shop</h4>
+                <a href="shop.html">All Products</a>
+                <a href="shop.html">Merch</a>
+                <a href="locations.html">Store Locator</a>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <a href="about.html">Our Story</a>
+                <a href="rewards.html">Rewards Program</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 QR Cola. All Rights Reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+        <div class="footer-tagline">
+            <span>SCAN THE TASTE. FEEL THE RUSH. ™</span>
+        </div>
+    </footer>
+
+    <!-- Floating Elements -->
+    <a href="#" class="back-to-top hidden" aria-label="Back to top">↑</a>
+    <a href="#" class="whatsapp-float" aria-label="Chat on WhatsApp">💬</a>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>We use cookies to ensure you get the best rush on our website. <a href="#">Learn more</a></p>
+        <button class="btn btn-small btn-primary" id="accept-cookies">Accept</button>
+    </div>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+</body>
+</html>
